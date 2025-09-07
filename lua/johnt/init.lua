@@ -1,5 +1,0 @@
-require("johnt.diagnostic")
-require("johnt.lsp")
-require("johnt.options")
-require("johnt.packer")
-require("johnt.remap")

@@ -113,25 +113,3 @@ vim.opt.timeoutlen = 500;
 
 -- Set window title to the filename
 vim.opt.title = true;
-
--- Don't save undo history to undo file (in $XDG_STATE_HOME/nvim/undo)
-vim.opt.undofile = false;
-
--- Specify the undo directory location
-vim.opt.undodir = os.getenv("HOME") .. ".vim/undodir";
-
--- Show a colored column at the given column number
-vim.opt.colorcolumn = "120";
-
-vim.opt.viewoptions = vim.tbl_filter(function(val) return val ~= "curdir" end, vim.opt.viewoptions:get())
-
--- Enable virtual edit in visual block mode
--- This has the effect of selecting empty cells beyond lines boundaries
-vim.opt.virtualedit = "block";
-
--- Disable line wrapping
-vim.opt.wrap = false;
-
--- Disable making a backup before overwriting a file
-vim.opt.writebackup = false;
-
