@@ -113,3 +113,7 @@ vim.opt.timeoutlen = 500;
 
 -- Set window title to the filename
 vim.opt.title = true;
+
+-- Make sure a border is set on all popup windows
+vim.opt.winborder = 'rounded';
+
