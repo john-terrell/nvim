@@ -7,3 +7,5 @@ require("config.options")
 require("config.theme")
 
 require("config.plugins")
+
+require("config.lsp")
