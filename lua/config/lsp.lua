@@ -1,6 +1,9 @@
 -- C/C++
 vim.lsp.enable("clangd")
 
+-- CMake
+vim.lsp.enable("cmake")
+
 -- Lua
 vim.lsp.enable("lua_ls")
 
