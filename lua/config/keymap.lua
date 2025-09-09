@@ -21,4 +21,10 @@ vim.keymap.set("n", "<leader>qf", telescope.quickfix)
 vim.keymap.set("n", "<leader>fd", telescope.lsp_definitions)
 vim.keymap.set("n", "<leader>fr", telescope.lsp_references)
 
+--
+-- DAP
+-- 
+local dap = require("dap")
 
+vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint)
+vim.keymap.set("n", "<leader>dc", dap.continue)

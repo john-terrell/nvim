@@ -1,32 +1,10 @@
 -- BufferLine
 vim.opt.termguicolors = true;
-require("bufferline").setup{}
+require("bufferline").setup {}
 
 require("config.plugins.cmake-tools")
 require("config.plugins.cmp")
-
--- Conform
-require("conform").setup({
-    formatters = {
-        squeeze_blanks = {
-            command = "cat"
-        }
-    },
-    formatters_by_ft = {
-        _ = {
-            "squeeze_blanks",
-            "trim_whitespace",
-            "trim_newlines"
-        },
-        lua = { "stylua" },
-        go = { "goimports", "golines", "gofmt" },
-        cpp = { "clang-format" }
-    },
-    -- format_on_save = {
-    --   lsp_fallback = true,
-    --   async = false,
-    -- }
-})
+require("config.plugins.conform")
 
 -- Lualine
 require("lualine").setup()
@@ -37,3 +15,5 @@ require("oil").setup()
 -- Treesitter
 require("config.plugins.treesitter")
 
+-- DAP
+require("config.plugins.dap")
