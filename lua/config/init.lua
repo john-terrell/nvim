@@ -1,11 +1,4 @@
-require("config.lazy")
-
-require("config.autocmd")
-require("config.diagnostic")
-require("config.keymap")
-require("config.options")
-require("config.theme")
-
-require("config.plugins")
-
+-- NOTE: Lazyvim auto requires autocmds, keymaps, lazy, and options so
+-- they're not needed here
 require("config.lsp")
+require("config.cmake-tools")

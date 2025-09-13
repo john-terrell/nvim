@@ -1,5 +1,12 @@
 return {
-    'stevearc/conform.nvim',
-    opt = {}
+    "stevearc/conform.nvim",
+    opts = {
+        formatters_by_ft = {
+            cpp = { "clang-format" },
+        },
+        format_on_save = {
+            lsp_fallback = true,
+            async = false,
+        }
+    }
 }
-
