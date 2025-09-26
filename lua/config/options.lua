@@ -24,4 +24,3 @@ vim.opt.title = true;
 
 -- Make sure a border is set on all popup windows
 vim.opt.winborder = 'rounded';
-
