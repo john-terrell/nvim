@@ -11,7 +11,10 @@ return {
       servers = {
         clangd = {
           mason = false,
-        }
+          keys = {
+            { "<leader>bb", vim.CMakeBuild, desc = "Build using CMake" },
+          },
+        },
       },
     },
   },
